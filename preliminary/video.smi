@@ -1,0 +1,167 @@
+﻿<SAMI>
+<HEAD>
+<STYLE TYPE="text/css">
+<!--
+    P {
+        margin-left: 16pt; 
+        margin-right: 16pt; 
+        margin-bottom: 16pt; 
+        margin-top: 16pt;
+        text-align: center; 
+        font-size: 18pt; 
+        font-family: arial; 
+        font-weight: 
+        bold; color: #f0f0f0;
+    }
+    .KRCC {Name:Korean; lang:ko-KR; SAMIType:CC;}
+    .ENCC {Name:English; lang:en-US; SAMIType:CC;}
+-->
+</STYLE>
+</HEAD>
+
+<BODY>
+
+    <!-- INTRO -->
+    <SYNC Start=0 End=12000><P Class=ENCC>
+        TSTL; TypeScript Standard Template Library
+    </P></SYNC>
+
+    <!-------------------------------------------------------------
+        OUTLINE
+    -------------------------------------------------------------->
+    <!-- TYPESCRIPT-STL -->
+    <SYNC Start=15000 End=23000><P Class=KRCC>
+        TSTL, 이 것은 TypeScript 의 STL 구현체입니다.
+    </P></SYNC>
+
+    <!-- STANDARD TEMPLATE LIBRARY -->
+    <SYNC Start=25000 End=31000><P Class=KRCC>
+        STL 은 C++ 표준화 위원회에서 정의한 인터페이스 규약으로써,
+    </P></SYNC>
+    <SYNC Start=31000 End=35000><P Class=KRCC>
+        크게 네 가지 모듈로 나뉩니다.
+    </P></SYNC>
+    <SYNC Start=35000 End=40000><P Class=KRCC>
+        단, 표준화 위원회는 어디까지나 인터페이스만을 정의할 뿐,
+    </P></SYNC>
+    <SYNC Start=40000 End=45000><P Class=KRCC>
+        구현체는 각자 알아서 만들어야 합니다.
+    </P></SYNC>
+    <SYNC Start=45000 End=50000><P Class=KRCC>
+        그리고 TSTL 은 그러한 구현체들 중 하나이지요.
+    </P></SYNC>
+
+    <!-- IN MY CASE -->
+    <SYNC Start=51000 End=56000><P Class=KRCC>
+        저는 알고리즘을 구현할 때,
+    </P></SYNC>
+    <SYNC Start=56000 End=61000><P Class=KRCC>
+        Script 언어로 빠르게 Prototype 을 만들어보고,
+    </P></SYNC>
+    <SYNC Start=61000 End=66000><P Class=KRCC>
+        차후 C++ 로 최적화를 합니다.
+    </P></SYNC>
+
+    <SYNC Start=67000 End=71375><P Class=KRCC>
+        저는 Prototyping 을 위한 스크립트 언어로, JavaScript 를 선택했습니다.
+    </P></SYNC>
+    <SYNC Start=71375 End=75750><P Class=KRCC>
+        JS (+HTML) 는 시각화 부문에서 유리하나,
+    </P></SYNC>
+    <SYNC Start=75750 End=80125><P Class=KRCC>
+        기저 라이브러리는 너무나도 부실하더군요.
+    </P></SYNC>
+    <SYNC Start=80125 End=84500><P Class=KRCC>
+        그래서 만들었습니다; TSTL
+    </P></SYNC>
+
+    <SYNC Start=85000 End=89375><P Class=KRCC>
+        또한, 매번 Migration 을 할 때마다 느껴지는 불편함이 있었습니다.
+    </P></SYNC>
+    <SYNC Start=89375 End=93125><P Class=KRCC>
+        JS 와 C++ 의 기저 라이브러리가 다르니 그러한 것인데,
+    </P></SYNC>
+    <SYNC Start=93125 End=96825><P Class=KRCC>
+        이 기저 라이브러리 (인터페이스) 가 같다면 얼마나 편리할까?
+    </P></SYNC>
+    <SYNC Start=96825 End=101200><P Class=KRCC>
+        그래서 만들었습니다; TSTL
+    </P></SYNC>
+
+    <!-------------------------------------------------------------
+        FEATURES
+    -------------------------------------------------------------->
+    <!-- CONTAINERS -->
+    <SYNC Start=106000 End=110000><P Class=KRCC>
+        Containers & Iterators
+    </P></SYNC>
+    <SYNC Start=110000 End=114000><P Class=KRCC>
+        이들은 Java 의 Collection Framework 에 해당하는 모듈들로써,
+    </P></SYNC>
+    <SYNC Start=114000 End=118000><P Class=KRCC>
+        다채로운 Containers 와 정규화된 Iterator Pattern 을 제공합니다.
+    </P></SYNC>
+
+    <SYNC Start=118000 End=125000><P Class=KRCC>
+        제공되는 Containers 의 종류로는 Linear & Adaptor Containers
+    </P></SYNC>
+
+    <SYNC Start=125000 End=132000><P Class=KRCC>
+        그리고 Associative Containers 들이 있습니다.
+    </P></SYNC>
+
+    <!-- ALGORITHMS -->
+    <SYNC Start=133000 End=138000><P Class=KRCC>
+        세번째 모듈 Algorithms
+    </P></SYNC>
+    <SYNC Start=138000 End=143000><P Class=KRCC>
+        다양한 알고리즘 함수들이 제공됩니다.
+    </P></SYNC>
+    <SYNC Start=143000 End=148000><P Class=KRCC>
+        특징: Iterator Pattern & Functional Programming
+    </P></SYNC>
+
+    <!-- FUNCTORS -->
+    <SYNC Start=149000 End=156000><P Class=KRCC>
+        마지막 모듈은 Functors <br/>
+        다양한 유틸리티성 객체들의 모음입니다.
+    </P></SYNC>
+
+    <SYNC Start=156000 End=161000><P Class=KRCC>
+        Functors 는 STL 이 개정될 때마다 규모가 커지는 모듈로써
+    </P></SYNC>
+    <SYNC Start=161000 End=166000><P Class=KRCC>
+        TSTL 또한 STL 의 개정에 발맞춰, 신규 기능들을 계속 추가해 나갈 것입니다.
+    </P></SYNC>
+
+    <!-------------------------------------------------------------
+        SUPPORTS
+    -------------------------------------------------------------->
+    <!-- GITHUB -->
+    <SYNC Start=171000 End=178000><P Class=KRCC>
+        TSTL 은 GitHub 를 통해 배포됩니다.
+    </P></SYNC>
+
+    <!-- GUIDE DOCUMENTS -->
+    <SYNC Start=179000 End=186000><P Class=KRCC>
+        또한, 사용자를 위한 매뉴얼이 구비되어 있습니다.
+    </P></SYNC>
+
+    <!-- UTILIZATION CASES -->
+    <SYNC Start=187000 End=192000><P Class=KRCC>
+        TSTL 은 지난 3년간, 다양한 상용 프로젝트들에 적용하면서
+    </P></SYNC>
+    <SYNC Start=192700 End=197700><P Class=KRCC>
+        안정화를 시키고, 꾸준히 개선해 왔습니다.
+    </P></SYNC>
+    <SYNC Start=198400 End=205000><P Class=KRCC>
+        때문에 TSTL 의 품질에 대해서는 아주 자신 있습니다.
+    </P></SYNC>
+
+    <!-- Q & A -->
+    <SYNC Start=205900><P Class=KRCC>
+        믿고 쓰십시오. TSTL
+    </P></SYNC>
+
+</BODY>
+</SAMI>
